@@ -608,6 +608,8 @@ h3 {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
 }
 .portfolio-list .item {
   margin-right: 30px;
