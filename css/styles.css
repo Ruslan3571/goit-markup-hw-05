@@ -114,12 +114,9 @@ h3 {
   margin-right: 10px;
   fill: #757575;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  vertical-align: middle;
 }
-.mail:hover {
-  fill: #2196f3;
-  background: #ffffff;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .phone {
   width: 10px;
   height: 16px;
@@ -127,11 +124,7 @@ h3 {
   margin-right: 10px;
   fill: #757575;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.phone:hover {
-  fill: #2196f3;
-  background: #ffffff;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  vertical-align: text-top;
 }
 
 /* icon-mail:hover,
@@ -166,12 +159,13 @@ h3 {
 }
 
 .contacts-nav .link:hover,
-.contacts-nav .link:focus {
-  color: var(--accent-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts-nav .link:hover,
-.contacts-nav .link:focus {
+.contacts-nav .link:focus,
+.contacts-nav .link:hover > .mail,
+.contacts-nav .link:focus > .mail,
+.contacts-nav .link:hover > .phone,
+.contacts-nav .link:focus > .phone {
+  fill: #2196f3;
+  background: #ffffff;
   color: var(--accent-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -492,6 +486,7 @@ h3 {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  background-color: inherit;
 }
 
 .footer .link {
