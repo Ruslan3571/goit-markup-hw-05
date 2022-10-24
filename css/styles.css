@@ -35,7 +35,7 @@ h3 {
 .main-nav {
   display: flex;
 }
-.logo-blue {
+.logo-label {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -43,7 +43,7 @@ h3 {
   line-height: 1.19;
   text-decoration: none;
 }
-.logo-black {
+.logo {
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -468,7 +468,7 @@ h3 {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer .logo-black {
+.footer .logo-labal {
   margin: 0;
   margin-bottom: 20px;
 }
@@ -477,8 +477,27 @@ h3 {
   margin: 0;
   padding: 0;
 }
-.fotter-logo {
+.contacts-nav.footer .link:hover {
+  color: var(--accent-color);
+  background: none;
+}
+.logo-fotter {
+  color: #2196f3;
+}
+.logo-fotter {
+  display: inline-block;
+  margin: 0;
   margin-bottom: 20px;
+}
+.contacts-nav__list {
+  list-style: none;
+}
+.contacts-nav__item {
+  margin-bottom: 9px;
+}
+
+.contacts-nav__item:last-child {
+  margin-bottom: 0;
 }
 .contacts-nav .link.text-footer {
   color: var(--white-color);
@@ -500,6 +519,9 @@ h3 {
 }
 .footer .link:last-child {
   margin-bottom: 0;
+}
+.second-join {
+  display: inline-flex;
 }
 .main-join {
   display: flex;
@@ -585,7 +607,6 @@ h3 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn .link-first {
-  margin-right: 8px;
   background: #f5f4fa;
   border-radius: 4px;
   padding: 6px 25px;
