@@ -29,8 +29,6 @@ h3 {
 }
 .header {
   background: #ffffff;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .main-nav {
   display: flex;
@@ -69,11 +67,15 @@ h3 {
 }
 .site-nav .item {
   margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav .item:last-child {
   margin-right: 0;
 }
 .site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -151,6 +153,8 @@ h3 {
 } */
 
 .contacts-nav .link {
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -177,7 +181,7 @@ h3 {
 .site-nav .link:hover::after,
 .site-nav .link:focus::after {
   position: absolute;
-  top: 50px;
+  top: 77px;
   left: 0;
   content: "";
   width: 100%;
@@ -208,11 +212,13 @@ h3 {
   padding-bottom: 200px;
 }
 .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
@@ -229,6 +235,9 @@ h3 {
   border: 0;
   padding: 10px 32px;
   margin: 0;
+}
+.button:hover {
+  background: #188ce8;
   cursor: pointer;
 }
 .section-features {
